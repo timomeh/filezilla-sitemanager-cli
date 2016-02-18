@@ -1,0 +1,35 @@
+{
+  "name": "filezilla-sitemanager-cli",
+  "version": "1.0.0",
+  "description": "CLI for FileZilla's Sitemanager",
+  "main": "./bin/fsc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "fsc": "./bin/fsc.js"
+  },
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timomeh/filezilla-sitemanager-cli.git"
+  },
+  "keywords": [
+    "filezilla",
+    "sitemanager"
+  ],
+  "author": "Timo Mämecke <maemecketimo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timomeh/filezilla-sitemanager-cli/issues"
+  },
+  "homepage": "https://github.com/timomeh/filezilla-sitemanager-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "copy-paste": "^1.1.4",
+    "inquirer": "^0.12.0",
+    "traverse": "^0.6.6",
+    "xml2js": "^0.4.16",
+    "yargs": "^4.1.0"
+  }
+}
