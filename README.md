@@ -14,7 +14,7 @@ $ npm install filezilla-sitemanager-cli -g
 
 ## 🔥 Warning 🔥
 
-This tool makes it very easy to access your FTP passwords. However, FileZilla stores passwords unencrypted. If you leave your PC unattended, hax0rz have access to those passwords anyway.
+This tool makes it very easy to access your ftp passwords. However, FileZilla stores passwords unencrypted. If you leave your pc unattended, hax0rz have access to those passwords anyway.
 
 ## Usage
 
