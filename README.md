@@ -1,6 +1,6 @@
 # FileZilla Sitemanager CLI
 
-Simply copy passwords and usernames from the FileZilla Sitemanager to your clipboard (OS X).
+Simply copy passwords and usernames from the FileZilla Sitemanager to your clipboard (OS X / Linux / Windows).
 
 Tested with FileZilla 3.
 
