@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var os = require("os");
 var fs = require("fs");
 var path = require("path");
 var printErrorAndExit = require("./helper").printErrorAndExit;
@@ -32,7 +33,17 @@ var inquirer = require("inquirer");
 var ncp = require("copy-paste");
 
 // Path to Sitemanager XML file
-var SITEMNG_PATH = path.resolve(process.env.HOME, ".filezilla/sitemanager.xml");
+switch (os.platform()) {
+  case "darwin":
+  case "linux":
+    var SITEMNG_PATH = path.resolve(process.env.HOME, ".filezilla/sitemanager.xml");
+    break;
+  case "win32":
+    var SITEMNG_PATH = path.resolve(process.env.APPDATA, "FileZilla/sitemanager.xml");
+    break;
+  default:
+    printErrorAndExit("Unsupported Platform");
+}
 
 // Set --pass to false if user is requested
 argv.p = !argv.u;
